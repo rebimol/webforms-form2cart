@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mageme_Form2Cart>
+            <version>0.1.0</version>
+        </Mageme_Form2Cart>
+    </modules>
+    <global>
+        <models>
+            <mageme_form2cart>
+                <class>Mageme_Form2Cart_Model</class>
+                <resourceModel>mageme_Form2Cart_resource</resourceModel>
+            </mageme_form2cart>
+        </models>
+        <helpers>
+            <mageme_form2cart>
+                <class>Mageme_Form2Cart_Helper</class>
+            </mageme_form2cart>
+        </helpers>
+        <events>
+            <webforms_result_submit>
+                <observers>
+                    <mageme_form2cart>
+                        <class>Mageme_Form2Cart_Model_Observer</class>
+                        <method>saveCart</method>
+                    </mageme_form2cart>
+                </observers>
+            </webforms_result_submit>
+        </events>
+    </global>
+</config>

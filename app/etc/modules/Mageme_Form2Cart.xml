@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mageme_Form2Cart>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <VladimirPopov_WebForms/>
+
+            </depends>
+        </Mageme_Form2Cart>
+    </modules>
+</config>
